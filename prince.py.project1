@@ -1,0 +1,32 @@
+# How can you store data persistently using files or a database in Python?
+
+# Ask user for input
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+
+# Open the file in append mode
+with open("users.txt", "a") as file:
+    file.write(f"{name},{age}\n")  # Save as comma-separated values
+
+print("Data saved to text file!")
+with open("users.txt", "r") as file:
+    for line in file:
+        name, age = line.strip().split(",")
+        print(f"Name: {name}, Age: {age}")
+
+
+
+
+# What are the benefits of using OOP (Object-Oriented Programming) in this project?
+
+#1.Code Reusability
+
+#2. ⁠Modularity
+
+#3⁠Easier Maintenance
+
+#4.⁠ ⁠Increased Productivity
+
+#5.⁠Scalability
+
+
